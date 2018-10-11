@@ -18,4 +18,16 @@ public class Point{
   public double getY(){
     return y;
   }
+
+  public Point copy(){
+    return new Point(x, y);
+  }
+
+  public String toString(){
+    return "(" +x+ "," +y+ ")";
+  }
+
+  public double distTo(Point p){
+    return Math.sqrt((this.x - p.x)*(this.x - p.x) + (this.y - p.y)*(this.y - p.y));
+  }
 }

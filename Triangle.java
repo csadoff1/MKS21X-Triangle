@@ -19,7 +19,7 @@ public class Triangle{
   }
 
   public double getPerimeter() {
-    return p0.distTo(p1) + p1.distTo(p2) + p2.distTo(p0);
+    return p0.distanceTo(p1) + p1.distanceTo(p2) + p2.distanceTo(p0);
   }
 
   public String toString(){
